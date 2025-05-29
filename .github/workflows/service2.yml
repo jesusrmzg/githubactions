@@ -29,4 +29,4 @@ jobs:
           OUTPUT2: ${{needs.job1.outputs.output2}}
         run: |
             echo "$OUTPUT1 $OUTPUT2"
-            echo "Muestra mensaje solo en branch de feature"
+            echo "Muestra mensaje solo en branch de feature durante push"
