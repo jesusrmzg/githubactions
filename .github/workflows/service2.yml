@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
 jobs:
   job1:
+    name: Outputs from steps
     runs-on: ubuntu-latest
     # Map a step output to a job output
     outputs:
@@ -21,6 +22,7 @@ jobs:
       - id: step2
         run: echo "test=Al Mundo Exterior" >> "$GITHUB_OUTPUT"
   job2:
+    name: Second Step
     runs-on: ubuntu-latest
     needs: job1
     steps:
